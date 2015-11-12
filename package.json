@@ -1,0 +1,13 @@
+{
+  "name": "intervaled-throttle",
+  "description": "A throttle that only occurs on an interaval.",
+  "repository": "git://github.com/micro-js/intervaled-throttle.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^4.0.0",
+    "tape": "^4.2.2"
+  }
+}
