@@ -58,12 +58,12 @@ test('should fire the function on an interval', function (t) {
   }, total + 5)
 })
 
-function counter() {
-  function count(){
-    count.invoked++;
+function counter () {
+  function count () {
+    count.invoked++
     count.log.push(+new Date())
   }
-  count.invoked = 0;
+  count.invoked = 0
   count.log = []
-  return count;
+  return count
 }
