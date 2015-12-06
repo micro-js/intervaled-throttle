@@ -34,7 +34,7 @@ test('should throttle the function', function (t) {
   setTimeout(function () {
     clearInterval(inter)
     t.equal(count.invoked, total / interval)
-  }, total + 5)
+  }, total + 10)
 
 })
 
@@ -63,7 +63,7 @@ test('should fire the function on an interval', function (t) {
     })
     t.equal(count.log.length, 5)
     t.end()
-  }, total + 5)
+  }, total + 10)
 })
 
 function counter () {
