@@ -12,9 +12,9 @@ node_modules: package.json
 	@npm install
 
 test: node_modules
-	@${BIN}/tape test/*.js
+	@${BIN}/tape test/*
 
 validate: node_modules
-	@${BIN}/standard
+	@standard
 
-.PHONY: test validate
+.PHONY: test validate release

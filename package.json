@@ -1,13 +1,15 @@
 {
-  "name": "intervaled-throttle",
-  "description": "A throttle that only occurs on an interaval.",
-  "repository": "git://github.com/micro-js/intervaled-throttle.git",
-  "version": "0.1.4",
+  "name": "@micro-js/throttle-intervaled",
+  "description": "A throttle that only fires on an interval.",
+  "repository": "git://github.com/micro-js/throttle-intervaled.git",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
   "dependencies": {},
   "devDependencies": {
-    "standard": "^4.0.0",
     "tape": "^4.2.2"
   }
 }

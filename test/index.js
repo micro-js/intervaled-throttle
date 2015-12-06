@@ -1,12 +1,20 @@
+/**
+ * Imports
+ */
+
 var throttle = require('..')
 var test = require('tape')
+
+/**
+ * Tests
+ */
 
 test('should call function', function (t) {
   t.plan(2)
 
   var count = counter()
   var interval = 50
-  var fn = throttle(count, interval)
+  var fn = throttle(interval, count)
   fn()
   t.equal(count.invoked, 0)
   setTimeout(function () {
@@ -21,7 +29,7 @@ test('should throttle the function', function (t) {
   var count = counter()
   var interval = 100
   var total = 500
-  var fn = throttle(count, interval)
+  var fn = throttle(interval, count)
   var inter = setInterval(fn, 20)
   setTimeout(function () {
     clearInterval(inter)
@@ -35,7 +43,7 @@ test('should fire the function on an interval', function (t) {
   var count = counter()
   var interval = 100
   var total = 500
-  var fn = throttle(count, interval)
+  var fn = throttle(interval, count)
   var start = +new Date()
   fn()
   randomCall()
