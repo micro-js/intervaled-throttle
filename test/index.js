@@ -59,7 +59,7 @@ test('should fire the function on an interval', function (t) {
   setTimeout(function () {
     timeout = null
     count.log.forEach(function (time) {
-      t.ok(Math.abs((time - start) % interval) < 8)
+      t.ok(Math.abs((time - start) % interval) < 10)
     })
     t.equal(count.log.length, 5)
     t.end()
