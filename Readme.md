@@ -29,11 +29,12 @@ hello()
 
 ## API
 
-### throttleIntervaled(arg)
+### throttleIntervaled(fn, interval)
 
-- `arg` -
+- `fn` - function to throttle
+- `interval` - interval
 
-**Returns:**
+**Returns:** throttled `fn`
 
 ## License
 
