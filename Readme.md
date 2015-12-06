@@ -17,9 +17,9 @@ A throttle that only fires on an interval.
 ```js
 var throttle = require('@micro-js/throttle-intervaled')
 
-var hello = throttle(function () {
+var hello = throttle(500, function () {
   console.log('Hello world')
-}, 500)
+})
 
 // will log "hello world" once, 500 ms from first call
 hello()
@@ -29,10 +29,10 @@ hello()
 
 ## API
 
-### throttleIntervaled(fn, interval)
+### throttleIntervaled(interval, fn)
 
-- `fn` - function to throttle
 - `interval` - interval
+- `fn` - function to throttle
 
 **Returns:** throttled `fn`
 
