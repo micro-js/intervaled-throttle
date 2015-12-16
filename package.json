@@ -2,7 +2,7 @@
   "name": "@f/throttle-intervaled",
   "description": "A throttle that only fires on an interval.",
   "repository": "git://github.com/micro-js/throttle-intervaled.git",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
