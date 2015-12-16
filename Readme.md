@@ -10,12 +10,12 @@ A throttle that only fires on an interval.
 
 ## Installation
 
-    $ npm install @micro-js/throttle-intervaled
+    $ npm install @f/throttle-intervaled
 
 ## Usage
 
 ```js
-var throttle = require('@micro-js/throttle-intervaled')
+var throttle = require('@f/throttle-intervaled')
 
 var hello = throttle(500, function () {
   console.log('Hello world')
@@ -46,5 +46,5 @@ MIT
 [git-url]: https://github.com/micro-js/throttle-intervaled
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
 [standard-url]: https://github.com/feross/standard
-[npm-image]: https://img.shields.io/npm/v/@micro-js/throttle-intervaled.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@micro-js/throttle-intervaled
+[npm-image]: https://img.shields.io/npm/v/@f/throttle-intervaled.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@f/throttle-intervaled
